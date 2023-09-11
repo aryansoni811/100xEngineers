@@ -1,0 +1,27 @@
+body{
+    background-color: #2f2f2f;
+    color: #fff;
+    font-family: 'poppins';
+}
+header{
+    background-color: #60c1ad;
+    color: #2f2f2f;
+    padding: 10px 20px 10px 20px;
+}
+/* it was taking margin by itself, to remove it I had to apply 0 */
+h2{
+    margin: 0;        
+}
+header a{
+    color: #2f2f2f;
+}
+a{
+    color: #60c1ad;
+}
+.intro_header{
+    text-align: center;
+    padding-top: 40px;
+}
+footer{
+    text-align: center;
+}

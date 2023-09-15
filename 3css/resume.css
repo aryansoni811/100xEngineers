@@ -22,10 +22,8 @@ h2{
     margin: 0;   
 }
 hr{
-    /* margin: 0;
-    height: 10px;
-    color: #2f2f2f; */
-    background-color: #60c1ad;
+    border: 2px solid #fff;
+    margin: 0;
 }
 strong{
     font-weight: 800;

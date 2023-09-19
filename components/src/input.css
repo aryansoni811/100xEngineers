@@ -1,3 +1,31 @@
 @tailwind base;
 @tailwind components;
+
+/* Regular Weight */
+@font-face {
+    font-family: 'Chirp';
+    src: url('/public/chirp-regular-web.woff2') format('woff2');
+    font-weight: 400;
+}
+
+/* Medium Weight */
+@font-face {
+    font-family: 'Chirp';
+    src: url('/public/chirp-medium-web.woff2') format('woff2');
+    font-weight: 500;
+}
+
+/* Bold Weight */
+@font-face {
+    font-family: 'Chirp';
+    src: url('/public/chirp-bold-web.woff2') format('woff2');
+    font-weight: 700;
+}
+
+/* Heavy Weight */
+@font-face {
+    font-family: 'Chirp';
+    src: url('/public/chirp-heavy-web.woff2') format('woff2');
+    font-weight: 900;
+}
 @tailwind utilities;

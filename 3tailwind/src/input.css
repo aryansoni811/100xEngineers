@@ -1,0 +1,14 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'Futura';
+    src: url("/public/Futura\ Book\ font.ttf");
+    font-weight: 400;
+  }
+@font-face {
+    font-family: 'Futura';
+    src: url("/public/Futura\ Heavy\ font.ttf");
+    font-weight: 700;
+  }

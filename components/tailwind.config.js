@@ -2,11 +2,10 @@
 module.exports = {
   content: ["./src/**/*.{html,js}"],
   theme: {
-    fontFamily: {
-      inter: ["Inter"],
-      chirp: ["Chirp"],
-    },
     extend: {
+      fontFamily: {
+        inter: ["Inter", "sans"],
+      },
       colors: {
         "twitter-blue": "#1D9BF0",
         "twitter-blue-2": "#1871CA",

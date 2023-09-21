@@ -534,12 +534,30 @@ video {
   --tw-backdrop-sepia:  ;
 }
 
+.blue-btn {
+  border-radius: 9999px;
+  --tw-bg-opacity: 1;
+  background-color: rgb(29 155 240 / var(--tw-bg-opacity));
+  font-weight: 700;
+  --tw-text-opacity: 1;
+  color: rgb(255 255 255 / var(--tw-text-opacity));
+}
+
+.blue-btn:hover {
+  --tw-bg-opacity: 1;
+  background-color: rgb(24 113 202 / var(--tw-bg-opacity));
+}
+
+.blue-btn:disabled {
+  opacity: 0.5;
+}
+
 /* Regular Weight */
 
 @font-face {
-  font-family: 'Chirp';
+  font-family: "Chirp";
 
-  src: url('/public/chirp-regular-web.woff2') format('woff2');
+  src: url("/public/chirp-regular-web.woff2") format("woff2");
 
   font-weight: 400;
 }
@@ -547,9 +565,9 @@ video {
 /* Medium Weight */
 
 @font-face {
-  font-family: 'Chirp';
+  font-family: "Chirp";
 
-  src: url('/public/chirp-medium-web.woff2') format('woff2');
+  src: url("/public/chirp-medium-web.woff2") format("woff2");
 
   font-weight: 500;
 }
@@ -557,9 +575,9 @@ video {
 /* Bold Weight */
 
 @font-face {
-  font-family: 'Chirp';
+  font-family: "Chirp";
 
-  src: url('/public/chirp-bold-web.woff2') format('woff2');
+  src: url("/public/chirp-bold-web.woff2") format("woff2");
 
   font-weight: 700;
 }
@@ -567,9 +585,9 @@ video {
 /* Heavy Weight */
 
 @font-face {
-  font-family: 'Chirp';
+  font-family: "Chirp";
 
-  src: url('/public/chirp-heavy-web.woff2') format('woff2');
+  src: url("/public/chirp-heavy-web.woff2") format("woff2");
 
   font-weight: 900;
 }
@@ -595,41 +613,20 @@ video {
   height: 100vh;
 }
 
-.w-full {
-  width: 100%;
-}
-
-.w-max {
-  width: -moz-max-content;
-  width: max-content;
-}
-
-.w-screen {
-  width: 100vw;
-}
-
-.w-96 {
-  width: 24rem;
+.w-80 {
+  width: 20rem;
 }
 
 .w-\[442px\] {
   width: 442px;
 }
 
-.w-\[334\] {
-  width: 334;
+.w-full {
+  width: 100%;
 }
 
-.w-\[334px\] {
-  width: 334px;
-}
-
-.w-72 {
-  width: 18rem;
-}
-
-.w-80 {
-  width: 20rem;
+.w-screen {
+  width: 100vw;
 }
 
 .flex-col {
@@ -652,16 +649,16 @@ video {
   gap: 0.5rem;
 }
 
+.gap-2\.5 {
+  gap: 0.625rem;
+}
+
 .gap-25 {
   gap: 6.25rem;
 }
 
 .gap-5 {
   gap: 1.25rem;
-}
-
-.gap-2\.5 {
-  gap: 0.625rem;
 }
 
 .rounded-full {
@@ -691,39 +688,19 @@ video {
   background-color: rgb(249 249 249 / var(--tw-bg-opacity));
 }
 
-.bg-twitter-blue {
-  --tw-bg-opacity: 1;
-  background-color: rgb(29 155 240 / var(--tw-bg-opacity));
-}
-
 .object-contain {
   -o-object-fit: contain;
      object-fit: contain;
 }
 
-.px-6 {
-  padding-left: 1.5rem;
-  padding-right: 1.5rem;
+.px-24 {
+  padding-left: 6rem;
+  padding-right: 6rem;
 }
 
-.py-10 {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-}
-
-.py-2 {
-  padding-top: 0.5rem;
-  padding-bottom: 0.5rem;
-}
-
-.py-5 {
-  padding-top: 1.25rem;
-  padding-bottom: 1.25rem;
-}
-
-.py-3 {
-  padding-top: 0.75rem;
-  padding-bottom: 0.75rem;
+.px-4 {
+  padding-left: 1rem;
+  padding-right: 1rem;
 }
 
 .px-5 {
@@ -731,9 +708,9 @@ video {
   padding-right: 1.25rem;
 }
 
-.px-4 {
-  padding-left: 1rem;
-  padding-right: 1rem;
+.px-6 {
+  padding-left: 1.5rem;
+  padding-right: 1.5rem;
 }
 
 .py-1 {
@@ -746,14 +723,29 @@ video {
   padding-bottom: 0.375rem;
 }
 
-.py-\[15px\] {
-  padding-top: 15px;
-  padding-bottom: 15px;
+.py-10 {
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
 }
 
-.px-24 {
-  padding-left: 6rem;
-  padding-right: 6rem;
+.py-2 {
+  padding-top: 0.5rem;
+  padding-bottom: 0.5rem;
+}
+
+.py-3 {
+  padding-top: 0.75rem;
+  padding-bottom: 0.75rem;
+}
+
+.py-4 {
+  padding-top: 1rem;
+  padding-bottom: 1rem;
+}
+
+.py-5 {
+  padding-top: 1.25rem;
+  padding-bottom: 1.25rem;
 }
 
 .pb-10 {
@@ -781,11 +773,11 @@ video {
 }
 
 .font-chirp {
-  font-family: Chirp;
+  font-family: Chirp, sans;
 }
 
 .font-inter {
-  font-family: Inter;
+  font-family: Inter, sans;
 }
 
 .text-2\.5xl {
@@ -834,11 +826,6 @@ video {
 .hover\:bg-neutral-200:hover {
   --tw-bg-opacity: 1;
   background-color: rgb(228 228 228 / var(--tw-bg-opacity));
-}
-
-.hover\:bg-twitter-blue-2:hover {
-  --tw-bg-opacity: 1;
-  background-color: rgb(24 113 202 / var(--tw-bg-opacity));
 }
 
 .disabled\:opacity-50:disabled {

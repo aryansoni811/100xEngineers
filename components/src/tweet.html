@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <!-- inter-font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Assignment 1.4</title>
+  </head>
+  <body class="font-inter bg-neutral-1000 text-white min-h-screen">
+    <div class="p-10">
+      <div
+        class="flex gap-4 px-4 py-2 w-fit border-b border-b-neutral-500 bg-transparent justify-items-start items-start"
+      >
+        <img src="../public/images/user-avatar.png" alt="user_photo" />
+        <div class="flex flex-col gap-2">
+          <div id="user-info" class="flex gap-x-2">
+            <p>Name</p>
+            <div class="flex text-neutral-500 gap-x-1">
+              <p>@handle</p>
+              <p>•</p>
+              <p>10h</p>
+            </div>
+          </div>
+          <textarea
+            class="bg-transparent focus:outline-none caret-twitter-blue resize-none overflow-auto"
+            name="tweet"
+            id="tweet"
+            cols="35"
+            placeholder="What's happening ?!"
+            maxlength="250"
+          ></textarea>
+          <div class="flex py-3 justify-between">
+            <!-- comment button -->
+            <button class="flex gap-1 items-center text-neutral-500 group">
+              <svg
+                class=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="15"
+                height="15"
+                viewBox="0 0 15 15"
+              >
+                <path
+                  class="stroke-neutral-500 group-hover:stroke-twitter-blue"
+                  d="M12.1092 9.61953L8.03202 13.1427V11.3389V10.5889H7.28202H5.56048C2.90372 10.5889 0.75 8.43518 0.75 5.77842C0.75 3.12167 2.90373 0.967941 5.56048 0.967941H8.88896C11.609 0.967941 13.814 3.17298 13.814 5.89303C13.814 7.32388 13.1918 8.68399 12.1092 9.61953Z"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <p class="text-sm group-hover:text-twitter-blue">11</p>
+            </button>
+            <!-- retweet button  -->
+            <button class="flex gap-1 items-center text-neutral-500 group">
+              <svg
+                class=""
+                xmlns="http://www.w3.org/2000/svg"
+                width="20"
+                height="15"
+                viewBox="0 0 20 15"
+              >
+                <path
+                  class="stroke-neutral-500 group-hover:stroke-green-success"
+                  d="M2.90298 1.46063L0.746094 3.61754M2.90298 1.46063L5.05988 3.61754M2.90298 1.46063L2.90298 10.6958C2.90298 12.2662 4.17605 13.5393 5.74646 13.5393L10.6678 13.5393"
+                  stroke-width="1.42174"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+                <path
+                  class="stroke-neutral-500 group-hover:stroke-green-success"
+                  d="M16.433 13.5394L18.5898 11.3825M16.433 13.5394L14.2761 11.3825M16.433 13.5394L16.433 4.30417C16.433 2.73376 15.1599 1.46069 13.5895 1.46069L8.66811 1.46069"
+                  stroke-width="1.42174"
+                  stroke-linecap="round"
+                  stroke-linejoin="round"
+                />
+              </svg>
+              <p class="text-sm group-hover:text-green-success">270</p>
+            </button>
+            <!-- heart button  -->
+            <button class="flex gap-1 items-center text-neutral-500 group">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="17"
+                height="17"
+                viewBox="0 0 17 17"
+              >
+                <path
+                  class="stroke-neutral-500 group-hover:stroke-red-like"
+                  d="M8.05399 3.86097L7.42929 3.08431C5.70486 0.940381 2.54605 1.29364 1.2602 3.77422C0.639749 4.97116 0.608864 7.40027 1.17783 8.627C3.09371 12.7578 6.68209 14.7113 7.37 15.0559C7.44712 15.0945 7.5172 15.1431 7.58984 15.1896C7.91175 15.3957 8.32284 15.3698 8.62234 15.112C8.67869 15.0635 12.8049 13.2092 14.9302 8.627C15.4991 7.40027 15.4682 4.97116 14.8478 3.77422C13.5619 1.29364 9.8745 0.697805 8.05399 3.86097Z"
+                  stroke-width="1.5"
+                />
+              </svg>
+              <p class="text-sm group-hover:text-red-like">1869</p>
+            </button>
+            <!-- share butotn  -->
+            <button class="flex gap-1 items-center text-neutral-500 group">
+              <img class="" src="../public/images/stats.svg" alt="stats_icon" />
+              <p class="text-sm group-hover:text-twitter-blue">99.6K</p>
+            </button>
+            <!-- share button  -->
+            <button class="flex gap-1 items-center text-neutral-500 group">
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                width="16"
+                height="17"
+                viewBox="0 0 16 17"
+              >
+                <path
+                  class="fill-neutral-500 group-hover:fill-neutral-50"
+                  d="M13.4502 17C12.7419 17 12.1398 16.7521 11.6439 16.2563C11.1481 15.7604 10.9002 15.1583 10.9002 14.45C10.9002 14.3508 10.9073 14.248 10.9214 14.1414C10.9356 14.0349 10.9569 13.9394 10.9852 13.855L4.9927 10.37C4.75186 10.5825 4.4827 10.7491 4.1852 10.8698C3.8877 10.9905 3.57603 11.0506 3.2502 11.05C2.54186 11.05 1.93978 10.8021 1.44395 10.3063C0.948112 9.81042 0.700195 9.20833 0.700195 8.5C0.700195 7.79167 0.948112 7.18958 1.44395 6.69375C1.93978 6.19792 2.54186 5.95 3.2502 5.95C3.57603 5.95 3.8877 6.01035 4.1852 6.13105C4.4827 6.25175 4.75186 6.41807 4.9927 6.63L10.9852 3.145C10.9569 3.06 10.9356 2.96452 10.9214 2.85855C10.9073 2.75258 10.9002 2.64973 10.9002 2.55C10.9002 1.84167 11.1481 1.23958 11.6439 0.74375C12.1398 0.247917 12.7419 0 13.4502 0C14.1585 0 14.7606 0.247917 15.2564 0.74375C15.7523 1.23958 16.0002 1.84167 16.0002 2.55C16.0002 3.25833 15.7523 3.86042 15.2564 4.35625C14.7606 4.85208 14.1585 5.1 13.4502 5.1C13.1244 5.1 12.8127 5.03993 12.5152 4.9198C12.2177 4.79967 11.9485 4.63307 11.7077 4.42L5.7152 7.905C5.74353 7.99 5.76478 8.08577 5.77895 8.1923C5.79311 8.29883 5.8002 8.4014 5.8002 8.5C5.8002 8.59917 5.79311 8.70202 5.77895 8.80855C5.76478 8.91508 5.74353 9.01057 5.7152 9.095L11.7077 12.58C11.9485 12.3675 12.2177 12.2012 12.5152 12.081C12.8127 11.9609 13.1244 11.9006 13.4502 11.9C14.1585 11.9 14.7606 12.1479 15.2564 12.6438C15.7523 13.1396 16.0002 13.7417 16.0002 14.45C16.0002 15.1583 15.7523 15.7604 15.2564 16.2563C14.7606 16.7521 14.1585 17 13.4502 17ZM13.4502 3.4C13.691 3.4 13.893 3.3184 14.0562 3.1552C14.2194 2.992 14.3008 2.79027 14.3002 2.55C14.3002 2.30917 14.2186 2.10715 14.0554 1.94395C13.8922 1.78075 13.6905 1.69943 13.4502 1.7C13.2094 1.7 13.0073 1.7816 12.8441 1.9448C12.6809 2.108 12.5996 2.30973 12.6002 2.55C12.6002 2.79083 12.6818 2.99285 12.845 3.15605C13.0082 3.31925 13.2099 3.40057 13.4502 3.4ZM3.2502 9.35C3.49103 9.35 3.69305 9.2684 3.85625 9.1052C4.01945 8.942 4.10076 8.74027 4.1002 8.5C4.1002 8.25917 4.0186 8.05715 3.8554 7.89395C3.6922 7.73075 3.49046 7.64943 3.2502 7.65C3.00936 7.65 2.80735 7.7316 2.64415 7.8948C2.48095 8.058 2.39963 8.25973 2.4002 8.5C2.4002 8.74083 2.4818 8.94285 2.645 9.10605C2.8082 9.26925 3.00993 9.35057 3.2502 9.35ZM13.4502 15.3C13.691 15.3 13.893 15.2184 14.0562 15.0552C14.2194 14.892 14.3008 14.6903 14.3002 14.45C14.3002 14.2092 14.2186 14.0072 14.0554 13.844C13.8922 13.6808 13.6905 13.5994 13.4502 13.6C13.2094 13.6 13.0073 13.6816 12.8441 13.8448C12.6809 14.008 12.5996 14.2097 12.6002 14.45C12.6002 14.6908 12.6818 14.8928 12.845 15.0561C13.0082 15.2192 13.2099 15.3006 13.4502 15.3Z"
+                />
+              </svg>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>

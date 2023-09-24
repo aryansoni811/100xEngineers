@@ -4,6 +4,10 @@
 
 @layer components {
   .blue-btn {
-    @apply text-white rounded-full bg-twitter-blue hover:bg-twitter-blue-2 disabled:opacity-50 font-bold;
+    @apply text-neutral-50 rounded-full bg-twitter-blue hover:bg-twitter-blue-2 disabled:opacity-50 disabled:pointer-events-none font-bold;
+  }
+
+  .btn-white {
+    @apply font-bold rounded-full text-neutral-1000 bg-neutral-50 hover:bg-neutral-200 disabled:opacity-50 disabled:pointer-events-none;
   }
 }

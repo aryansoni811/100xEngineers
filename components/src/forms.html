@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../dist/output.css" />
+    <!-- inter font links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap"
+      rel="stylesheet"
+    />
+    <title>Assignment 1.2</title>
+  </head>
+  <body class="text-white font-inter min-h-screen bg-black px-10 py-10">
+    <h2 class="text-2xl font-bold">Build input components</h2>
+
+    <div class="my-5 flex-col">
+      <input
+        type="text"
+        name="Label"
+        id="label"
+        class="px-2 py-3 mt-2 min-w-[426px] bg-transparent rounded border-solid border border-neutral-500 focus:outline-none focus-within:border-twitter-blue peer caret-twitter-blue"
+        placeholder="Label"
+      />
+      <legend
+        class="peer-focus-within:text-twitter-blue ml-3 -mt-14 absolute text-xs text-neutral-500 px-1 bg-black"
+      >
+        Label
+      </legend>
+    </div>
+
+    <div class="my-5">
+      <div class="flex">
+        <img src="../public/images/user-avatar.png" alt="user-avatar" />
+        <textarea
+          class="py-1 px-3 bg-transparent focus:outline-none caret-twitter-blue resize-none"
+          name="tweet"
+          id="tweet"
+          cols="35"
+          rows="1"
+          placeholder="What's happening ?!"
+          maxlength="250"
+        ></textarea>
+      </div>
+    </div>
+
+    <div class="my-5">
+      <div
+        class="py-2.5 px-4 w-80 flex rounded-full border border-neutral-500 hover:border-twitter-blue bg-searchbar-fill text-white gap-3.5 justify-start items-center group"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="17"
+          height="17"
+          viewBox="0 0 17 17"
+          class="fill-neutral-500 group-hover:fill-twitter-blue"
+        >
+          <path
+            d="M16.0446 15.2054L13.1471 12.3079C14.1961 11.065 14.8334 9.46109 14.8334 7.70834C14.8334 3.77375 11.643 0.583336 7.70837 0.583336C3.77379 0.583336 0.583374 3.77375 0.583374 7.70834C0.583374 11.6429 3.77379 14.8333 7.70837 14.8333C9.46192 14.8333 11.065 14.1968 12.3064 13.1471L15.2039 16.0446C15.3202 16.1602 15.473 16.2188 15.6235 16.2188C15.7739 16.2188 15.9282 16.161 16.043 16.0446C16.2766 15.8126 16.2766 15.4374 16.0446 15.2054ZM1.77087 7.70834C1.77087 4.43479 4.43483 1.77084 7.70837 1.77084C10.9819 1.77084 13.6459 4.43479 13.6459 7.70834C13.6459 10.9819 10.9819 13.6458 7.70837 13.6458C4.43483 13.6458 1.77087 10.9819 1.77087 7.70834Z"
+          />
+        </svg>
+        <input
+          class="bg-transparent placeholder:text-neutral-500 focus:outline-none caret-twitter-blue"
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search"
+        />
+      </div>
+    </div>
+
+    <div class="my-5">
+      <div
+        class="py-2.5 px-4 w-80 flex rounded-full border border-neutral-500 hover:border-twitter-blue bg-searchbar-fill text-white gap-3.5 justify-start items-center group"
+      >
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          width="17"
+          height="17"
+          viewBox="0 0 17 17"
+          class="fill-neutral-500 group-hover:fill-twitter-blue"
+        >
+          <path
+            d="M16.0446 15.2054L13.1471 12.3079C14.1961 11.065 14.8334 9.46109 14.8334 7.70834C14.8334 3.77375 11.643 0.583336 7.70837 0.583336C3.77379 0.583336 0.583374 3.77375 0.583374 7.70834C0.583374 11.6429 3.77379 14.8333 7.70837 14.8333C9.46192 14.8333 11.065 14.1968 12.3064 13.1471L15.2039 16.0446C15.3202 16.1602 15.473 16.2188 15.6235 16.2188C15.7739 16.2188 15.9282 16.161 16.043 16.0446C16.2766 15.8126 16.2766 15.4374 16.0446 15.2054ZM1.77087 7.70834C1.77087 4.43479 4.43483 1.77084 7.70837 1.77084C10.9819 1.77084 13.6459 4.43479 13.6459 7.70834C13.6459 10.9819 10.9819 13.6458 7.70837 13.6458C4.43483 13.6458 1.77087 10.9819 1.77087 7.70834Z"
+          />
+        </svg>
+        <input
+          class="bg-transparent placeholder:text-neutral-500 focus:outline-none caret-twitter-blue"
+          type="text"
+          name="search"
+          id="search"
+          placeholder="Search"
+        />
+        <textarea
+          class="bg-transparent placeholder:text-neutral-500 focus:outline-none caret-twitter-blue"
+          name="search"
+          id="search"
+          cols="35"
+          rows="1"
+          placeholder="Search"
+        ></textarea>
+      </div>
+    </div>
+  </body>
+</html>

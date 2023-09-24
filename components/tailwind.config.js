@@ -4,7 +4,8 @@ module.exports = {
   theme: {
     extend: {
       fontFamily: {
-        inter: ["Inter", "sans"],
+        inter: ["Inter", { lineHeight: "1.188em" }],
+        // when finishing add sans-serif after inter
       },
       colors: {
         "twitter-blue": "#1D9BF0",

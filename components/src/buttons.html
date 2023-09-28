@@ -109,43 +109,75 @@
         <button class="px-5 py-5 w-[442px] blue-btn" disabled>Post</button>
       </div>
 
-      <div class="my-5 flex gap-5">
+      <!-- tabs  -->
+      <div
+        class="my-5 pt-5 w-[600px] text-neutral-50 font-medium border-b-2 border-solid border-neutral-500 flex justify-center items-center gap-40"
+      >
+        <button
+          class="active:border-b-4 pb-3 active:pb-4 active:border-twitter-blue active:text-neutral-500"
+        >
+          For you
+        </button>
+        <button
+          class="active:border-b-4 pb-3 active:pb-4 active:border-twitter-blue active:text-neutral-500"
+        >
+          Following
+        </button>
+      </div>
+
+      <!-- icon buttons interactive -->
+      <div class="my-5 flex gap-5 items-center">
         <button>
           <svg
+            class="stroke-neutral-50 stroke-2 active:fill-neutral-50"
             xmlns="http://www.w3.org/2000/svg"
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
           >
-            <path
-              d="M12 5.69L17 10.19V18H15V12H9V18H7V10.19L12 5.69ZM12 3L2 12H5V20H11V14H13V20H19V12H22L12 3Z"
-              fill="white"
-            />
+            <path d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z" />
           </svg>
         </button>
         <button>
           <svg
-            xmlns="http://www.w3.org/2000/svg"
+            class="stroke-neutral-50 stroke-2 active:fill-neutral-50"
             width="24"
             height="24"
             viewBox="0 0 24 24"
-            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
           >
-            <path
-              d="M10 20V14H14V20H19V12H22L12 3L2 12H5V20H10Z"
-              fill="white"
-            />
+            <g id="Group">
+              <path
+                id="Vector"
+                d="M1 15C1 13.9391 1.42143 12.9217 2.17157 12.1716C2.92172 11.4214 3.93913 11 5 11H13C14.0609 11 15.0783 11.4214 15.8284 12.1716C16.5786 12.9217 17 13.9391 17 15C17 15.5304 16.7893 16.0391 16.4142 16.4142C16.0391 16.7893 15.5304 17 15 17H3C2.46957 17 1.96086 16.7893 1.58579 16.4142C1.21071 16.0391 1 15.5304 1 15Z"
+                stroke="white"
+                stroke-width="2"
+                stroke-linejoin="round"
+              />
+              <path
+                id="Vector_2"
+                d="M9 7C10.6569 7 12 5.65685 12 4C12 2.34315 10.6569 1 9 1C7.34315 1 6 2.34315 6 4C6 5.65685 7.34315 7 9 7Z"
+                stroke="white"
+                stroke-width="2"
+              />
+            </g>
           </svg>
         </button>
       </div>
 
+      <!-- icon images  -->
       <div class="my-5 flex gap-5">
         <button>
           <img src="../public/images/home_line.svg" alt="home_line" />
         </button>
         <button>
           <img src="../public/images/home_fill.svg" alt="home_line" />
+        </button>
+        <button>
+          <img src="../public/images/group_line.svg" alt="home_line" />
+        </button>
+        <button>
+          <img src="../public/images/group_fill.svg" alt="home_line" />
         </button>
       </div>
     </div>
